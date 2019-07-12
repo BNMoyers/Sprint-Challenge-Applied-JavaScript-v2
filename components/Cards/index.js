@@ -7,13 +7,19 @@
 const articleCards = document.querySelector('.cards-container')
 axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
   .then(data => {
-      console.log(data)
-    const articlesArray = data.data.articles;
-    articlesArray.forEach(articleObj => {
-        const articleCard = 
+      console.log('data:',data)
+    const articlesArr = data.data.articles;
+    for(instance in articlesArr){
+        articlesArr[instance].forEach(articleObj => {
+            const articleCard = createCard(articleObj)
+            console.log('articleObj',articleObj)
+            // console.log(articleCard)
+            // articleCards.appendChild(articleCard)
     })
-      
-    })
+}
+  })
+  
+   
 // Create a function that will programmatically create the following DOM component:
 //
 // <div class="card">
@@ -27,12 +33,20 @@ axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
 // </div>
 //
 
-function cardComponent(cardObj){
+function createCard(cardObj){
     const card = document.createElement('div');
     card.classList.add('card');
 
     const headline = document.createElement('div');
     headline.classList.add('headline');
+    headline.textContent = cardObj.headline;
+    card.appendChild(headline);
+
+    const author = document.createElement('div');
+    author.classList.add('author');
+
+    const authorPic = document.createElement('img');
+    authorPic.src = 
     
 
 }

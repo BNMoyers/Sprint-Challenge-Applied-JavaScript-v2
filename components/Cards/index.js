@@ -45,9 +45,21 @@ function createCard(cardObj){
     const author = document.createElement('div');
     author.classList.add('author');
 
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('img-container');
+
     const authorPic = document.createElement('img');
-    authorPic.src = 
+    authorPic.src = cardObj.authorPhoto;
     
+    const authorName = document.createElement('span');
+    authorName.textContent = cardObj.authorName;
+    
+    imgContainer.appendChild(authorPic);
+    author.appendChild(imgContainer);
+    author.appendChild(authorName);
+    card.appendChild(author);
+
+    return card
 
 }
 

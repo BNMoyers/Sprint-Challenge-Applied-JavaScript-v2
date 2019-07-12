@@ -1,5 +1,5 @@
 # Sprint-Challenge Applied Javascript - Lambda Times
-
+Britt Moyers
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored the DOM and the concept of components. During this Sprint, you studied the DOM, DOM Events, and Components, as well as HTTP GET requests, and the axios library. In your challenge this week, you will demonstrate proficiency by creating an online Lambda newspaper called "Lambda Times."
 
 ## Instructions
@@ -29,33 +29,41 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+        The Document Object Model. It's a language neutral API that creates a virtual representation of our html elements, bridging the gap between our code and the browser. It allows us to manipulate the final display output without directly editing the html. 
 
 2. What is an event?
 
+        an event is any kind of interaction with our code, such as keystrokes, mouse movement, and scrolling. 
+
 3. What is an event listener?
+
+        an event listener 'listens' for an event - ie user interaction - and fires a specific chunk of code when that event happens. 
 
 4. Why would we convert a NodeList into an Array?
 
+        while NodeLists look like arrays, they aren't. As such, they don't have access to the full suite of array methods like '.map' or '.filter'. Converting a nodelist to an array allows us to use these methods. 
+
 5. What is a component?
+        A component is a highly modular chunk of code into which we can pass data in order to get a standardized output. Components are reusable and make our code scalable (and quicker to write!)
 
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Fork the project into your GitHub user account
+* [x] Clone the forked project into a directory on your machine
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled it. DO NOT add any code to the HTML file itself.
+* [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled it. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component. 
+* [x] Following the instructions in the `Header/index.js` file, create the Header component. 
 
-* [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
+* [x] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
-* [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
+* [x] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
 ## Stretch Problems
 

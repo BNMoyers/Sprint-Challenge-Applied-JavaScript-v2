@@ -16,4 +16,16 @@
     <img src="./assets/carousel/turntable.jpeg" />
     <div class="right-button"> > </div>
   </div>
+
 */
+
+function createCarousel(){
+  const carousel = document.createElement('div');
+  carousel.classList.add('carousel');
+
+  const lftBtn = document.createElement('div');
+  lftBtn.classList.add('left-button');
+  
+  const img1 = document.createElement('img');
+  img1.src = ('/assets/carousel/mountains.jpeg') 
+}

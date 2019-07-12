@@ -7,14 +7,11 @@
 const articleCards = document.querySelector('.cards-container')
 axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
   .then(data => {
-      console.log('data:',data)
     const articlesArr = data.data.articles;
     for(instance in articlesArr){
         articlesArr[instance].forEach(articleObj => {
             const articleCard = createCard(articleObj)
-            console.log('articleObj',articleObj)
-            // console.log(articleCard)
-            // articleCards.appendChild(articleCard)
+            articleCards.appendChild(articleCard)
     })
 }
   })

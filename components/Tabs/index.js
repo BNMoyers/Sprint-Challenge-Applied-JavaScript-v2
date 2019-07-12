@@ -8,9 +8,7 @@
 const topicsTabs = document.querySelector('.topics');
 axios.get(`https://lambda-times-backend.herokuapp.com/topics`)
   .then(data => {
-    console.log('source data:', data)
     const topics = data.data.topics;
-    console.log('topics',  topics)
     topics.forEach(topicTitle =>{
         const topicTab = createTab(topicTitle);
         topicsTabs.appendChild(topicTab);
